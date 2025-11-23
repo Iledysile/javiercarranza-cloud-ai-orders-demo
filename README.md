@@ -1,4 +1,4 @@
-\# Cloud AI Orders Demo
+# Cloud AI Orders Demo
 
 
 
@@ -10,9 +10,9 @@ LinkedIn: https://linkedin.com/in/jcarranza1988
 
 
 
-\## Description
+## Description
 
-This is a mini demo simulating an order microservice using \*\*AWS Bedrock\*\* and \*\*Terraform\*\*.  
+This is a mini demo simulating an order microservice using **AWS Bedrock** and **Terraform**.  
 
 The service receives an order, generates an AI-based summary, and stores the result in an S3 bucket.  
 
@@ -20,87 +20,87 @@ It demonstrates cloud-native development, infrastructure as code (IaC), and serv
 
 
 
-\## Project Structure
+## Project Structure
 
-\- `terraform/` → Defines AWS infrastructure (S3 bucket, IAM roles, Lambda) using Terraform  
+- `terraform/` → Defines AWS infrastructure (S3 bucket, IAM roles, Lambda) using Terraform  
 
-\- `lambda/` → Lambda function code interacting with AWS Bedrock  
+- `lambda/` → Lambda function code interacting with AWS Bedrock  
 
-\- `README.md` → Project documentation  
-
-
-
-\## Features
-
-\- Cloud-native microservice for order processing  
-
-\- AI integration with AWS Bedrock for text summarization  
-
-\- Infrastructure as code with Terraform  
-
-\- Serverless deployment using AWS Lambda  
-
-\- Results storage in S3  
-
-\- Easily extendable for other AI-driven cloud workflows  
+- `README.md` → Project documentation  
 
 
 
-\## Getting Started
+## Features
+
+- Cloud-native microservice for order processing  
+
+- AI integration with AWS Bedrock for text summarization  
+
+- Infrastructure as code with Terraform  
+
+- Serverless deployment using AWS Lambda  
+
+- Results storage in S3  
+
+- Easily extendable for other AI-driven cloud workflows  
 
 
 
-\### Prerequisites
-
-\- AWS account with permissions for S3, Lambda, and IAM  
-
-\- Terraform installed locally  
-
-\- Python 3.11+ for Lambda packaging  
+## Getting Started
 
 
 
-\### Setup
+### Prerequisites
 
-1\. Navigate to the Terraform folder:
+- AWS account with permissions for S3, Lambda, and IAM  
 
-```bash
+- Terraform installed locally  
+
+- Python 3.11+ for Lambda packaging  
+
+
+
+### Setup
+
+1. Navigate to the Terraform folder:
+
+bash
 
 cd terraform
 
-2\. Initialize Terraform:
+2. Initialize Terraform:
 
 terraform init
 
-3\. Preview changes:
+3. Preview changes:
 
 terraform plan
 
-4\. Apply infrastructure:
+4. Apply infrastructure:
 
 terraform apply
 
 
 
-\### Testing the Lambda
+### Testing the Lambda
 
 
 
-1. Go to AWS Console → Lambda → process\_order\_demo
+1. Go to AWS Console → Lambda → process_order_demo
 
-2\. Create a test event JSON:
+2. Create a test event JSON:
 
 {
 
-&nbsp; "order\_description": "Order for t-shirt and pants"
+&nbsp; "order_description": "Order for t-shirt and pants"
 
 }
 
-3\. Invoke the function and check results in the S3 bucket defined by Terraform.
+3. Invoke the function and check results in the S3 bucket defined by Terraform.
 
 
 
-\### Cleanup
+### Cleanup
 
 terraform destroy
 
@@ -108,7 +108,7 @@ terraform destroy
 
 
 
-\### Notes
+### Notes
 
 
 
